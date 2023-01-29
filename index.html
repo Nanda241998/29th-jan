@@ -1,0 +1,111 @@
+  <!DOCTYPE html>
+ <html lang="en">
+    <head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 30px;
+        }
+        
+        .top-bar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+        .top-bar .leaderboard{
+            background-color: #fff;
+            color: rgb(81, 70, 70);
+            padding: 5px;
+            border-radius: 5px;
+            
+        }
+        .top-bar .leaderboard a{
+            text-decoration: none;
+            color: rgb(158, 20, 128);
+        }
+        .gameArea .startScreen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 90vh;
+            background-color: #000;
+            color: #fff;
+        }
+        .hide{
+            display: none !important;
+        }
+        .car{
+            position:absolute;
+            height: 100px;
+            width: 50px;
+            bottom: 0px;
+            left: 200px;
+            background-color: white;
+            /*margin: auto;*/
+            background-image: url('car.png');
+          
+            background-size: cover;
+            vertical-align: middle;
+            border-radius: 10px;
+        }
+        .line{
+                width: 10px;
+                height: 100px;
+                position: absolute;
+                background-color: white;
+                margin-left: 195px;
+            }
+           
+        .gameScreen{
+            background-color: rgb(49, 44, 44);
+            height: 95vh;
+            position: relative;
+           /* overflow: hidden;*/
+            margin: auto;
+            width: 450px;
+            
+        }
+
+        .vl {
+            width: 10px;
+            height: 80px;
+            position: absolute;
+            background-color: white;
+            margin-left: 195px;
+            top: 0;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="top-bar">
+        <div class="user-name">NANDA</div>
+        <div class="score-section">Score:<span class="score">0</span> </div>
+        <div class="lives">Highest Score: 2478</div>
+        <div class="leaderboard">
+            <a href="#">Leaderboard</button>
+        </div>
+        </div>        
+        <div class="gameArea">
+            <div class="startScreen">
+                <h1>Welcome to Game Screen</h1><br>
+                <p>click anywhere to start the game</p>
+            </div>
+            <div class="gameScreen hide">
+                <div class="vl">
+
+                </div>
+               
+            </div>
+        </div>
+       
+        
+        <script src="index.js">  </script>
+    </body>
+ </html>
